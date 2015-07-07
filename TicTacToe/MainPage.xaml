@@ -8,7 +8,16 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
+    <Grid Opacity="0.5">
+        <Button x:Name="butA1" Content="" HorizontalAlignment="Left" Margin="35,45,0,0" VerticalAlignment="Top" Width="100" Height="125" BorderThickness="0,0,2.5,2.5" Click="button_click" FontSize="84" FontFamily="Cooper Black"/>
+        <Button x:Name="butA2" Content="" HorizontalAlignment="Left" Margin="148,45,0,0" VerticalAlignment="Top" Width="100" Height="125" BorderThickness="2.5,0,2.5,2.5" Click="button_click" FontFamily="Cooper Black" FontSize="84"/>
+        <Button x:Name="butA3" Content="" HorizontalAlignment="Left" Margin="260,45,0,0" VerticalAlignment="Top" Width="100" Height="125" BorderThickness="2.5,0,0,2.5" Click="button_click" FontFamily="Cooper Black" FontSize="84"/>
+        <Button x:Name="butB1" Content="" HorizontalAlignment="Left" Margin="35,155,0,0" VerticalAlignment="Top" Width="100" Height="125" BorderThickness="0,2.5,2.5,2.5" Click="button_click" FontFamily="Cooper Black" FontSize="84"/>
+        <Button x:Name="butB2" Content="" HorizontalAlignment="Left" Margin="148,155,0,0" VerticalAlignment="Top" Width="100" Height="125" Click="button_click" FontSize="84" FontWeight="Bold" FontFamily="Cooper Black"/>
+        <Button x:Name="butB3" Content="" HorizontalAlignment="Left" Margin="260,155,0,0" VerticalAlignment="Top" Width="100" Height="125" BorderThickness="2.5,2.5,0,2.5" Click="button_click" FontFamily="Cooper Black" FontSize="84"/>
+        <Button x:Name="butC1" Content="" HorizontalAlignment="Left" Margin="35,265,0,0" VerticalAlignment="Top" Width="100" Height="125" BorderThickness="0,2.5,2.5,0" Click="button_click" FontFamily="Cooper Black" FontSize="84"/>
+        <Button x:Name="butC2" Content="" HorizontalAlignment="Left" Margin="148,265,0,0" VerticalAlignment="Top" Width="100" Height="125" BorderThickness="2.5,2.5,2.5,0" Click="button_click" FontFamily="Cooper Black" FontSize="84"/>
+        <Button x:Name="butC3" Content="" HorizontalAlignment="Left" Margin="260,265,0,0" VerticalAlignment="Top" Width="100" Height="125" BorderThickness="2.5,2.5,0,0" Click="button_click" FontFamily="Cooper Black" FontSize="84"/>
 
     </Grid>
 </Page>
