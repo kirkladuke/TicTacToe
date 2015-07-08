@@ -9,15 +9,27 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid Opacity="0.5">
-        <Button x:Name="butA1" Content="" HorizontalAlignment="Left" Margin="35,45,0,0" VerticalAlignment="Top" Width="100" Height="125" BorderThickness="0,0,2.5,2.5" Click="button_click" FontSize="84" FontFamily="Cooper Black"/>
-        <Button x:Name="butA2" Content="" HorizontalAlignment="Left" Margin="148,45,0,0" VerticalAlignment="Top" Width="100" Height="125" BorderThickness="2.5,0,2.5,2.5" Click="button_click" FontFamily="Cooper Black" FontSize="84"/>
-        <Button x:Name="butA3" Content="" HorizontalAlignment="Left" Margin="260,45,0,0" VerticalAlignment="Top" Width="100" Height="125" BorderThickness="2.5,0,0,2.5" Click="button_click" FontFamily="Cooper Black" FontSize="84"/>
-        <Button x:Name="butB1" Content="" HorizontalAlignment="Left" Margin="35,155,0,0" VerticalAlignment="Top" Width="100" Height="125" BorderThickness="0,2.5,2.5,2.5" Click="button_click" FontFamily="Cooper Black" FontSize="84"/>
-        <Button x:Name="butB2" Content="" HorizontalAlignment="Left" Margin="148,155,0,0" VerticalAlignment="Top" Width="100" Height="125" Click="button_click" FontSize="84" FontWeight="Bold" FontFamily="Cooper Black"/>
-        <Button x:Name="butB3" Content="" HorizontalAlignment="Left" Margin="260,155,0,0" VerticalAlignment="Top" Width="100" Height="125" BorderThickness="2.5,2.5,0,2.5" Click="button_click" FontFamily="Cooper Black" FontSize="84"/>
-        <Button x:Name="butC1" Content="" HorizontalAlignment="Left" Margin="35,265,0,0" VerticalAlignment="Top" Width="100" Height="125" BorderThickness="0,2.5,2.5,0" Click="button_click" FontFamily="Cooper Black" FontSize="84"/>
-        <Button x:Name="butC2" Content="" HorizontalAlignment="Left" Margin="148,265,0,0" VerticalAlignment="Top" Width="100" Height="125" BorderThickness="2.5,2.5,2.5,0" Click="button_click" FontFamily="Cooper Black" FontSize="84"/>
-        <Button x:Name="butC3" Content="" HorizontalAlignment="Left" Margin="260,265,0,0" VerticalAlignment="Top" Width="100" Height="125" BorderThickness="2.5,2.5,0,0" Click="button_click" FontFamily="Cooper Black" FontSize="84"/>
+        <Button x:Name="butA1" Content="" HorizontalAlignment="Left" Margin="39,67,0,0" VerticalAlignment="Top" Width="100" Height="125" BorderThickness="0,0,2.5,2.5" Click="button_click" FontSize="84" FontFamily="Cooper Black"/>
+        <Button x:Name="butA2" Content="" HorizontalAlignment="Left" Margin="152,67,0,0" VerticalAlignment="Top" Width="100" Height="125" BorderThickness="2.5,0,2.5,2.5" Click="button_click" FontFamily="Cooper Black" FontSize="84"/>
+        <Button x:Name="butA3" Content="" HorizontalAlignment="Left" Margin="264,67,0,0" VerticalAlignment="Top" Width="100" Height="125" BorderThickness="2.5,0,0,2.5" Click="button_click" FontFamily="Cooper Black" FontSize="84"/>
+        <Button x:Name="butB1" Content="" HorizontalAlignment="Left" Margin="39,177,0,0" VerticalAlignment="Top" Width="100" Height="125" BorderThickness="0,2.5,2.5,2.5" Click="button_click" FontFamily="Cooper Black" FontSize="84"/>
+        <Button x:Name="butB2" Content="" HorizontalAlignment="Left" Margin="152,177,0,0" VerticalAlignment="Top" Width="100" Height="125" Click="button_click" FontSize="84" FontWeight="Bold" FontFamily="Cooper Black"/>
+        <Button x:Name="butB3" Content="" HorizontalAlignment="Left" Margin="264,177,0,0" VerticalAlignment="Top" Width="100" Height="125" BorderThickness="2.5,2.5,0,2.5" Click="button_click" FontFamily="Cooper Black" FontSize="84"/>
+        <Button x:Name="butC1" Content="" HorizontalAlignment="Left" Margin="39,287,0,0" VerticalAlignment="Top" Width="100" Height="125" BorderThickness="0,2.5,2.5,0" Click="button_click" FontFamily="Cooper Black" FontSize="84"/>
+        <Button x:Name="butC2" Content="" HorizontalAlignment="Left" Margin="152,287,0,0" VerticalAlignment="Top" Width="100" Height="125" BorderThickness="2.5,2.5,2.5,0" Click="button_click" FontFamily="Cooper Black" FontSize="84"/>
+        <Button x:Name="butC3" Content="" HorizontalAlignment="Left" Margin="264,287,0,0" VerticalAlignment="Top" Width="100" Height="125" BorderThickness="2.5,2.5,0,0" Click="button_click" FontFamily="Cooper Black" FontSize="84"/>
+        <Button x:Name="btnNewGame" Content="New Game" HorizontalAlignment="Left" Margin="39,563,0,0" VerticalAlignment="Top" Click="btnNewGame_Click"/>
+        <Button x:Name="btnCurrentPlayer" Content="Player X's turn" HorizontalAlignment="Left" Margin="14,417,0,0" VerticalAlignment="Top" Width="380" Height="22" IsTapEnabled="False" IsDoubleTapEnabled="False" IsHoldingEnabled="False" IsRightTapEnabled="False" IsEnabled="False"/>
+        <TextBlock HorizontalAlignment="Left" Margin="24,487,0,0" TextWrapping="Wrap" Text="X win Count" VerticalAlignment="Top" Height="24" FontSize="20"/>
+        <TextBlock HorizontalAlignment="Left" Margin="153,487,0,0" TextWrapping="Wrap" Text="Draw Count" VerticalAlignment="Top" Height="24" FontSize="20"/>
+        <TextBlock HorizontalAlignment="Left" Margin="279,487,0,0" TextWrapping="Wrap" Text="O win Count" VerticalAlignment="Top" Height="24" FontSize="20"/>
+        <TextBlock x:Name="tblXCount" HorizontalAlignment="Left" Margin="24,522,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Height="24" FontSize="20"  Width="110" TextAlignment="Center" IsDoubleTapEnabled="False" IsHoldingEnabled="False" IsRightTapEnabled="False" IsTapEnabled="False" />
+        <TextBlock x:Name="tblDrawCount" HorizontalAlignment="Left" Margin="153,522,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Height="24" FontSize="20" Width="110
+                   " TextAlignment="Center" IsDoubleTapEnabled="False" IsHoldingEnabled="False" IsRightTapEnabled="False" IsTapEnabled="False" />
+        <TextBlock x:Name="tblOCount" HorizontalAlignment="Left" Margin="279,522,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Height="24" FontSize="20" Width="110" TextAlignment="Center" IsDoubleTapEnabled="False" IsHoldingEnabled="False" IsRightTapEnabled="False" IsTapEnabled="False"/>
+        <Button x:Name="btnResetScore" Content="Reset Score Count" HorizontalAlignment="Left" Margin="216,563,0,0" VerticalAlignment="Top" Click="btnResetScore_Click"/>
+        <RadioButton Content="Single Player" HorizontalAlignment="Left" Margin="14,12,0,0" VerticalAlignment="Top"  GroupName="gameMode" IsChecked="True" Click="gameModeClick1"/>
+        <RadioButton Content="Two Player" HorizontalAlignment="Left" Margin="216,12,0,0" VerticalAlignment="Top" GroupName="gameMode" Click="gameModeClick2"/>
 
     </Grid>
 </Page>
