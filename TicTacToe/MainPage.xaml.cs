@@ -465,12 +465,26 @@ namespace TicTacToe
         private void gameModeClick2(object sender, RoutedEventArgs e)
         {
             singlePlayer = false;
+            turn = true;
+            turnCount = 0;
+            enableButtons();
+            resetButtonText();
+            btnCurrentPlayer.Content = "Player X's turn";
+            thereIsAWinner = false;
         }
 
         private void gameModeClick1(object sender, RoutedEventArgs e)
         {
             singlePlayer = true;
+            turn = true;
+            turnCount = 0;
+            enableButtons();
+            resetButtonText();
+            btnCurrentPlayer.Content = "Player X's turn";
+            thereIsAWinner = false;
         }
+
+       
 
         
 
